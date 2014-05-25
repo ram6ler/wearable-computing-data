@@ -1,5 +1,3 @@
-setwd("/Users/rambler/Documents/Coursera/Data Science/03_GettingCleaningData/Project/UCI HAR Dataset")
-
 # Assumed that the working directory is "UCI HAR Dataset"
 # of the data exctracted from:
 # https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip

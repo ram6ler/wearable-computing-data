@@ -1,17 +1,16 @@
 # Codebook
-The original data (see README.md) contained 
 
 
 ## Variables
 
 ### <code>subject</code>
-A record to identify the volunteer from whom the data was collected.
+A record to identify the volunteer who was wearing the mobile device while performing the various activities, from whom the data was collected.
 
 ### <code>activity</code>
 A record of the activity the volunteer was engaged in when the data was collected. This a categorical variable with a value from the set <code>WALKING</code>, <code>WALKING_UPSTAIRS</code>, <code>WALKING_DOWNSTAIRS</code>, <code>SITTING</code>, <code>STANDING</code> and <code>LAYING</code> (_sic_). This is the variable that the gyroscope and accelerometer readings are ideally to predict.
 
 ### _Predictors_
-The original data set (see README.md) contained 561 numerical variables measured or calculated from readings from accelorometers and gyroscopes in mobile devices carried by volunteers engaging in various activities. Some (66) of the variables were measures of centre (means) or spread (standard deviation) of other collected data. For this project, we were only interested in these latter variables. 
+The original data set (see [README.md](https://github.com/ram6ler/wearable-computing-data/blob/master/README.md)) contained 561 numerical variables measured or calculated from readings from accelorometers and gyroscopes in mobile devices carried by volunteers engaging in various activities. Some (66) of the variables were measures of centre (means) or spread (standard deviation) of other collected data. For this project, we were only interested in these latter variables. 
 
 I have called these variables _predictors_ because the purpose of the original data collection appears to have been to use information collected from the mobile devices to predict the activity in which the subject was engaged.
 
