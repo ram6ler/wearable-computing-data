@@ -89,13 +89,17 @@ final.data <- data.frame()
 invisible(
   by(
     final.selected, 
-    list(final.selected$subject, final.selected$activity), 
+    list(final.selected$activity, final.selected$subject), 
     function(df) {
       dummy.row <- data.frame(subject = df$subject[1])
       for (v in variable.names) 
-        dummy.row[v] <- mean(df[v])
+        dummy.row[v] <- mean(df[[v]])
       dummy.row$activity <- df$activity[1]
       final.data <<- rbind(final.data, dummy.row)
     }
   )
 )
+
+# Save the final, tidy data set.
+
+write.table(final.data, file = "tidy_data.txt", sep = ",")
